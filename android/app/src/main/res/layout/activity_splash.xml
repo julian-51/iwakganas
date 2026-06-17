@@ -15,6 +15,6 @@
         android:scaleType="fitCenter"
         android:maxWidth="480dp"
         android:maxHeight="480dp"
-        android:contentDescription="Mangan Iwak Logo" />
+        android:contentDescription="Iwak Ganas Logo" />
 
 </RelativeLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Main app theme — migrated to Material Components, no deprecated colorAccent -->
-    <style name="Theme.ManganIwak" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.IwakGanas" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -13,13 +13,13 @@
     </style>
 
     <!-- Game activity theme -->
-    <style name="Theme.ManganIwak.Game" parent="Theme.ManganIwak">
+    <style name="Theme.IwakGanas.Game" parent="Theme.IwakGanas">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>
     </style>
 
     <!-- Splash screen theme -->
-    <style name="Theme.ManganIwak.Splash" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.IwakGanas.Splash" parent="Theme.MaterialComponents.NoActionBar">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@color/splash_bg</item>

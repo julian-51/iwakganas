@@ -1,8 +1,8 @@
 # Add project specific ProGuard rules here.
 
 # ── App-specific keeps ────────────────────────────────────────────────────────
--keep class com.angkasadinamika.manganiwak.model.** { *; }
--keep class com.angkasadinamika.manganiwak.controller.** { *; }
+-keep class com.julian.iwakganas.model.** { *; }
+-keep class com.julian.iwakganas.controller.** { *; }
 
 # ── AndroidX / AppCompat ──────────────────────────────────────────────────────
 -keep class androidx.appcompat.** { *; }

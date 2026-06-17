@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🐠 Mangan Iwak"
+            android:text="🐠 Iwak Ganas"
             android:textColor="#FFDD88"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -70,7 +70,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="© Rusmiyati"
+            android:text="© Julian Kristal Sejahtera"
             android:textColor="#AAAAAA"
             android:textSize="13sp"
             android:gravity="center"
@@ -79,7 +79,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="dinamikaangkasa@gmail.com"
+            android:text="juliankristal51@gmail.com"
             android:textColor="#AAAAAA"
             android:textSize="13sp"
             android:gravity="center" />

@@ -10,11 +10,11 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace 'com.angkasadinamika.manganiwak'
+    namespace 'com.julian.iwakganas'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.angkasadinamika.manganiwak"
+        applicationId "com.julian.iwakganas"
         minSdk 22
         targetSdk 35
         versionCode 1
