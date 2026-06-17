@@ -360,12 +360,25 @@
         }
 
         /* Multi-language Visibility */
-        [lang="id"] {
-            display: block;
+        body.lang-active-id [lang="en"] {
+            display: none !important;
+        }
+        body.lang-active-id [lang="id"] {
+            display: block !important;
         }
 
-        [lang="en"] {
-            display: none;
+        body.lang-active-en [lang="id"] {
+            display: none !important;
+        }
+        body.lang-active-en [lang="en"] {
+            display: block !important;
+        }
+
+        body.lang-active-id .toc-list[lang="id"] {
+            display: grid !important;
+        }
+        body.lang-active-en .toc-list[lang="en"] {
+            display: grid !important;
         }
 
         /* Responsive Design */
@@ -397,7 +410,7 @@
         }
     </style>
 </head>
-<body>
+<body class="lang-active-id">
 
     <!-- Language Toggle -->
     <div class="lang-switch-container">
@@ -541,32 +554,17 @@
         </footer>
     </div>
 
-    <!-- Vanilla Javascript for Language Switching -->
+    <!-- Vanilla Javascript for Language Switching (Pure CSS Class Toggle) -->
     <script>
         function switchLanguage(lang) {
-            // Toggle active button class
             if (lang === 'id') {
                 document.getElementById('btn-id').classList.add('active');
                 document.getElementById('btn-en').classList.remove('active');
-                
-                // Show Indonesian elements
-                document.querySelectorAll('[lang="id"]').forEach(el => el.style.display = 'block');
-                // Hide English elements
-                document.querySelectorAll('[lang="en"]').forEach(el => el.style.display = 'none');
-                
-                // Keep toc-list list styling (which gets set to block otherwise)
-                document.querySelector('.toc-list[lang="id"]').style.display = 'grid';
+                document.body.className = 'lang-active-id';
             } else {
                 document.getElementById('btn-en').classList.add('active');
                 document.getElementById('btn-id').classList.remove('active');
-                
-                // Show English elements
-                document.querySelectorAll('[lang="en"]').forEach(el => el.style.display = 'block');
-                // Hide Indonesian elements
-                document.querySelectorAll('[lang="id"]').forEach(el => el.style.display = 'none');
-                
-                // Keep toc-list list styling (which gets set to block otherwise)
-                document.querySelector('.toc-list[lang="en"]').style.display = 'grid';
+                document.body.className = 'lang-active-en';
             }
         }
     </script>
