@@ -1,4 +1,4 @@
-# Mangan Iwak - Icon & Splash Screen Implementation
+# Iwak Ganas - Icon & Splash Screen Implementation
 
 ## Steps
 
@@ -9,7 +9,7 @@
 - [x] Create SplashActivity.java (2.5s delay → MainActivity)
 - [x] Create activity_splash.xml layout (centered logo on black background)
 - [x] Update colors.xml (added splash_bg color)
-- [x] Update themes.xml with Theme.ManganIwak.Splash
+- [x] Update themes.xml with Theme.IwakGanas.Splash
 - [x] Update AndroidManifest.xml (SplashActivity as launcher, MainActivity as non-launcher)
 
 ## All Done ✅
